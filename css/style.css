@@ -16,11 +16,13 @@ header {
 
 nav h2 {
     text-align : center;
-    background-color : #D3573C;
+    background-color : #d16d57;
     width : 28%;
     border-radius : 5px;
     font-size : 18px;
     margin : auto;
+    padding : 5px;
+    margin-top : 10px;
 }
 
 nav ul li {
@@ -32,16 +34,20 @@ nav ul li {
     color : #901C1C;
     font-weight : bold;
     font-size : 13px;
+    padding : 1px;
+    text-align: center;
 }
 
 h1 {
     color: #901C1C;
     margin-right: 100px;
+    margin-top : 60px;
 }
 
 .logo {
     height: 50px;
     margin-left: 100px;
+    margin-top : 50px;
 }
 
 .photographer_section {
