@@ -7,21 +7,27 @@
                 {
                     console.log(jsondata.photographers[cpt].name);
                 }
-        
-        const photographers = 
-            {
-                "name": "Data",
-                "id": 1,
-                "city": "Paris",
-                "country": "France",
-                "tagline": "Ceci est ma data test",
-                "price": 400,
-                "portrait": "account.png"
-            }
-        });
-        // et bien retourner le tableau photographers seulement une fois
+                const photographers = 
+                    {
+                        /*"name": jsondata.photographers[cpt].name,
+                        "id": jsondata.photographers[cpt].id,
+                        "city": jsondata.photographers[cpt].city,
+                        "country": jsondata.photographers[cpt].country,
+                        "tagline": jsondata.photographers[cpt].tagline,
+                        "price": jsondata.photographers[cpt].price,
+                        "portrait": jsondata.photographers[cpt].portrait */
+                        "name": "Data",
+                        "id": 1,
+                        "city": "Paris",
+                        "country": "France",
+                        "tagline": "Ok",
+                        "price": 400,
+                        "portrait": "ok"   
+                    }
+            })
+        .catch(err => console.log("Erreur" + err))
         return ({
-            photographers: [...photographers, ...photographers, ...photographers]})
+            photographers: [...photographers, ...photographers]})
     }
 
     async function displayData(photographers) {
