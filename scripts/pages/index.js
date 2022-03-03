@@ -6,7 +6,6 @@ async function getPhotographers() {
         {   
             for (cpt = 0; cpt <= jsondata.photographers.length; cpt++)
             {
-                //console.log(jsondata.photographers[cpt].name);
                 const photographers = 
                     {
                         "name": jsondata.photographers[cpt].name,
@@ -17,10 +16,9 @@ async function getPhotographers() {
                         "price": jsondata.photographers[cpt].price,
                         "portrait": jsondata.photographers[cpt].portrait 
                     }
-                console.log(photographers);
+                return photographers;
             }
-            return ({
-                photographers: [...photographers, ...photographers]})
+            
         })
     .catch(err => console.log("Erreur" + err))
     
